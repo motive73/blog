@@ -79,19 +79,14 @@
                       ${title}
                     </a>
                   </h1>
-                  ${milestone.length > 0 && html`
-                    <div className="categories">
-                      in
-                      ${milestone.map((milestone) => html`
-                        <span
-                          key="${milestone.id}"
-                          style=${{ color: '#' + milestone.color, padding: '0 .25em' }}
-                        >
-                          ${milestone.title}
-                        </span>
-                      `)}
-                    </div>
-                  `}
+                  <div className="categories">
+                    <span
+                      key="${milestone.id}"
+                      style=${{ color: '#' + label.color, padding: '0 .25em' }}
+                    >
+                      ${milestone.title}
+                    </span>
+                  </div>
                   <div className="meta">
                     <span>by </span>
                     <a href="${user.html_url}">${user.login}</a>
