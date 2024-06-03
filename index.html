@@ -82,12 +82,12 @@
                   ${milestones.length > 0 && html`
                     <div className="categories">
                       in
-                      ${milestones.map((label) => html`
+                      ${milestones.map((milestone) => html`
                         <span
-                          key="${label.id}"
+                          key="${milestone.id}"
                           style=${{ color: '#' + label.color, padding: '0 .25em' }}
                         >
-                          ${label.name}
+                          ${milestone.name}
                         </span>
                       `)}
                     </div>
