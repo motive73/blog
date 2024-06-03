@@ -63,7 +63,7 @@
               .map(({
                 number,
                 title,
-                labels,
+                milestones,
                 user,
                 created_at,
                 comments,
@@ -79,10 +79,10 @@
                       ${title}
                     </a>
                   </h1>
-                  ${labels.length > 0 && html`
+                  ${milestones.length > 0 && html`
                     <div className="categories">
                       in
-                      ${labels.map((label) => html`
+                      ${milestones.map((label) => html`
                         <span
                           key="${label.id}"
                           style=${{ color: '#' + label.color, padding: '0 .25em' }}
